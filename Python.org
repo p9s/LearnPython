@@ -48,3 +48,16 @@
 - IO:
   + 输入 :: message = input('请输入需要的内容')
   + 输出 :: print( message )
+** 标准数据类型
+*** 标准数据类型
+- Number:
+  + int
+  + float
+  + bool
+  + complex( 复数 )
+- String
+- Tuple
+- List
+- Dictionary
+- Sets
+- 空值 :: None
