@@ -119,6 +119,10 @@
   + 在字典中, 嵌套列表
   + 在字典中, 嵌套字典
 *** 集合
+集合是一个无序, 不重复的元素序列,
+用大括号{}和set()来创建集合
+空集合, 必须使用 set() 来创建, 因为 {} 是用来创建空字典的
+
 - 用途
   + 成员关系测试
   + 删除重复元素
@@ -150,9 +154,21 @@ s1.update( [1,4], [5,6])
     1. set.remove(key)  :: 如果 key 不存在, 会报错:  KeyError
     2. set.discard(obj) :: 如果 obj 存在, 则删除它, key 不存在,  不会报错
     3. set.pop()  :: 随机删除集合中的一个元素
+    4. set.clea() :: 清空集合
 #+BEGIN_SRC python
 s = set( 'abc' )
 s.remove('b')
 s.discard( 'x' )
 s.pop()
+s.clean()
+#+END_SRC
+  + 长度 :: len()
+#+BEGIN_SRC python
+s1 = set( 'abc' )
+len( s1 )
+#+END_SRC
+  + 检查元素是否存在于集合中
+#+BEGIN_SRC python
+s1 = set( 'abc' )
+'x' in s1
 #+END_SRC
