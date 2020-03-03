@@ -148,5 +148,8 @@ s1.update( [1,4], [5,6])
 #+END_SRC
   + 删除
     1. set.remove(key)
+#+BEGIN_SRC python
+
+#+END_SRC
     2. set.discard(obj) :: 如果 obj 存在, 则删除它
     3. set.pop()  :: 删除任意一个对象
