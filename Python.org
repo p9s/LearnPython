@@ -148,9 +148,11 @@ s1.update( [1,4], [5,6])
 #+END_SRC
   + 删除
     1. set.remove(key)  :: 如果 key 不存在, 会报错:  KeyError
+    2. set.discard(obj) :: 如果 obj 存在, 则删除它, key 不存在,  不会报错
+    3. set.pop()  :: 随机删除集合中的一个元素
 #+BEGIN_SRC python
 s = set( 'abc' )
 s.remove('b')
+s.discard( 'x' )
+s.pop()
 #+END_SRC
-    2. set.discard(obj) :: 如果 obj 存在, 则删除它
-    3. set.pop()  :: 删除任意一个对象
