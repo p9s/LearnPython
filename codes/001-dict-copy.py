@@ -5,3 +5,7 @@ dict2 = dict1.copy()
 print( dict1 )
 print( dict2 )
 print( type(dict2) )
+
+tup = ( 'a', 'b', 'c' )
+print( tup )
+print( type( tup))
